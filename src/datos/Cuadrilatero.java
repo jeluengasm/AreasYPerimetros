@@ -37,4 +37,9 @@ public abstract class Cuadrilatero extends Forma implements Operador {
         return a;
     }
     
+    @Override
+    public String toString() {
+        return "Forma: Cuadrilatero\nLado 1: " + this.getLadoA() + "\nLado 2: " + this.getLadoB();
+    }
+    
 }

@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package datos;
 
-/**
- *
- * @author LENOVO
- */
 public class Isoceles extends Triangulo{
     public Isoceles(double lado1, double lado2){
         super(lado1, lado2);
@@ -21,4 +13,9 @@ public class Isoceles extends Triangulo{
             return false;
         }
     }
+    
+    @Override
+    public String toString() {
+        return super.toString().concat("\nTipo: Isosceles\nArea: " + this.calcularArea() + "\nPerimetro: " + this.calcularPerimetro());
+    }    
 }

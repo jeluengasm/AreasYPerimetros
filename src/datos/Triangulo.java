@@ -57,5 +57,9 @@ public abstract class Triangulo extends Forma implements Operador {
         return this.getLado1()+this.getLado2()+this.getLado3();
     }
     
+    @Override
+    public String toString() {
+        return "Forma: Triangulo\nLado 1: " + this.getLado1() + "\nLado 2: " + this.getLado2() + "\nLado 3: " + this.getLado3();
+    }
     
 }

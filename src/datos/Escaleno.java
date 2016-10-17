@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package datos;
 
-/**
- *
- * @author LENOVO
- */
 public class Escaleno extends Triangulo{
     public Escaleno(double lado1, double lado2, double lado3){
         super(lado1, lado2, lado3);
@@ -21,4 +13,9 @@ public class Escaleno extends Triangulo{
             return false;
         }
     }
+
+    @Override
+    public String toString() {
+        return super.toString().concat("\nTipo: Escaleno\nArea: " + this.calcularArea() + "\nPerimetro: " + this.calcularPerimetro());
+    }    
 }

@@ -1,7 +1,7 @@
 package datos;
 
 public class SemiCirculo extends Circulo {
-
+    
     public SemiCirculo(double radio) {
         super(radio);
     }
@@ -19,5 +19,9 @@ public class SemiCirculo extends Circulo {
         p = PI * this.getRadio() + 2 * this.getRadio();
         return p;
     }
-
+    
+    @Override
+    public String toString() {
+        return "\nRadio: " + this.getRadio() + "Figura: Semicirculo\nArea: " + this.calcularArea()+ "\nPerimetro: " + this.calcularPerimetro();
+    }
 }

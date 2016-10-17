@@ -35,4 +35,9 @@ public class Trapecio extends Cuadrilatero{
     public double getBaseMenor() {
         return baseMenor;
     }
+    
+    @Override
+    public String toString() {
+        return super.toString().concat("\nBase mayor: " + this.getBaseMayor() + "\nBase menor: " + this.getBaseMenor() + "\nAltura: " + this.getAltura()+ "\nFigura: Trapecio\nArea: " + this.calcularArea()+ "\nPerimetro: " + this.calcularPerimetro());
+    }
 }
