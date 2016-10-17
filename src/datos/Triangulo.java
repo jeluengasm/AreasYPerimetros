@@ -1,6 +1,8 @@
 package datos;
 
-public abstract class Triangulo extends Forma {
+import UI.Operador;
+
+public abstract class Triangulo extends Forma implements Operador {
     
     private double lado1;
     private double lado2;

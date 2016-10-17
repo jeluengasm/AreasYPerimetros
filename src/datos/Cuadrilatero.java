@@ -1,6 +1,8 @@
 package datos;
 
-public abstract class Cuadrilatero extends Forma {
+import UI.Operador;
+
+public abstract class Cuadrilatero extends Forma implements Operador {
 
     private double ladoA;
     private double ladoB;
