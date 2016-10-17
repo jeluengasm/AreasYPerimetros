@@ -1,46 +1,38 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package datos;
 
-/**
- *
- * @author brian
- */
 public class Trapecio extends Cuadrilatero{
+    double altura;
+    double baseMayor;
+    double baseMenor;
     
-    double lado;
-    double baseMayor = this.getLadoA();
-    double baseMenor = this.getLadoB();
-    
-    public Trapecio (){
-        super();
+    public Trapecio (double ladoA, double ladoB, double altura, double baseMayor, double baseMenor){
+        super(ladoA, ladoB);
+        this.altura = altura;
+        this.baseMayor = baseMayor;
+        this.baseMenor = baseMenor;
     }
 
     @Override
     public double calcularArea() {
-       double a =  (((this.getLadoA() +this.getLadoB() ) * this.obtenerAltura() )/2);
+       double a =  ((((this.getBaseMayor()) + this.getBaseMenor()) * this.getAltura())/2);
        return a;
     }
     
     @Override
-    public double calcularPerimetro( Tra) {
-        double p = this.baseMayor + this.baseMenor + this.getLado()*2;
+    public double calcularPerimetro() {
+        double p = this.getBaseMayor() + this.getBaseMenor() + this.getLadoA() + this.getLadoB();
         return p;
     }
-    
-    public double  obtenerAltura (){
-        
-        double a = Math.sqrt( Math.pow(this.getLado(), 2)+ Math.pow(((this.baseMayor-this.baseMenor)/2),2));
-        return a;
+
+    public double getAltura() {
+        return altura;
     }
 
-    public double getLado() {
-        return lado;
+    public double getBaseMayor() {
+        return baseMayor;
     }
-    
-    
-    
+
+    public double getBaseMenor() {
+        return baseMenor;
+    }
 }
