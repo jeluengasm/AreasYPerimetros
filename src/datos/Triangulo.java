@@ -1,6 +1,6 @@
 package datos;
 
-public abstract class Triangulo extends Forma {
+public abstract class Triangulo extends Forma implements Operador{
     
     private double lado1;
     private double lado2;
