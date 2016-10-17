@@ -1,8 +1,6 @@
 package datos;
 
-import UI.Operador;
-
-public abstract class Forma implements Operador {
+public abstract class Forma {
     
     private double area;
     private double perimetro;
@@ -14,5 +12,7 @@ public abstract class Forma implements Operador {
     public double getPerimetro() {
         return perimetro;
     }
+    
+    
     
 }
