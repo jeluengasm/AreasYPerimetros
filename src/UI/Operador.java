@@ -4,8 +4,8 @@ import datos.Circulo;
 
 public interface Operador {
 
-    double calcularArea(Circulo c);
+    double calcularArea();
 
-    double calcularPerimetro(Circulo c);
+    double calcularPerimetro();
 
 }
