@@ -4,6 +4,7 @@ import datos.Forma;
 
 public interface Operador{
 
-    double calcular(Forma f);
+    double calcularArea(Forma f);
+    double calcularPerimetro (Forma f);
 
 }
