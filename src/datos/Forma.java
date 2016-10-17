@@ -1,9 +1,9 @@
 package datos;
 
-import UI.OperadorCirculo;
+import UI.Operador;
 
 
-public abstract class Forma implements OperadorCirculo {
+public abstract class Forma implements Operador{
     
     private double area;
     private double perimetro;

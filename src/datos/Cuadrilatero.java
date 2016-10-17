@@ -12,6 +12,5 @@ public abstract class Cuadrilatero extends Forma {
     public double getLadoB() {
         return ladoB;
     }
-    
 
 }

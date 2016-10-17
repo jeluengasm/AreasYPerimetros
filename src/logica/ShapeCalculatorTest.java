@@ -1,7 +1,7 @@
 package logica;
 
-import UI.OperadorCirculo;
 import datos.SemiCirculo;
+import UI.Operador;
 
 public class ShapeCalculatorTest {
     

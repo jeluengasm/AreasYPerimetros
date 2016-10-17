@@ -2,7 +2,7 @@ package UI;
 
 import datos.Circulo;
 
-public interface OperadorCirculo {
+public interface Operador {
 
     double calcularArea(Circulo c);
 
