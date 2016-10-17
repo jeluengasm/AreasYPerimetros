@@ -1,11 +1,10 @@
 package datos;
 
-import UI.Operador;
-
-public abstract class Cuadrilatero extends Forma implements Operador {
+public abstract class Cuadrilatero extends Forma {
 
     private double ladoA;
     private double ladoB;
+    private double ladoC;
 
     public double getLadoA() {
         return ladoA;
@@ -14,5 +13,11 @@ public abstract class Cuadrilatero extends Forma implements Operador {
     public double getLadoB() {
         return ladoB;
     }
+    
+    public double getLadoC() {
+        return ladoC;
+    }
+    
 
 }
+
