@@ -44,11 +44,13 @@ public abstract class Triangulo extends Forma {
         return lado3;
     }
 
+    @Override
     public double calcularArea() {
         double s = (this.calcularPerimetro()/2);
         return Math.sqrt((s*(s-this.getLado1())*(s-this.getLado2())*(s-this.getLado3())));
     }
 
+    @Override
     public double calcularPerimetro() {
         return this.getLado1()+this.getLado2()+this.getLado3();
     }
