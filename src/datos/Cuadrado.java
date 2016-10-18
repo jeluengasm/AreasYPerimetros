@@ -1,6 +1,6 @@
 package datos;
 
-public class Cuadrado extends Cuadrilatero{ //Tiene que ser así para que concatene con el toString de Cuadrilatero y no Rectangulo
+public class Cuadrado extends Cuadrilatero{
     
     public Cuadrado(double ladoA){
         super(ladoA);

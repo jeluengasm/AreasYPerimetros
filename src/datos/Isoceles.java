@@ -6,12 +6,10 @@ public class Isoceles extends Triangulo{
         super(lado1, lado2);
     }
     
-    public static boolean esIsoceles(double lado1, double lado2, double lado3){
-        if(((lado1 == lado2)&&(lado1 != lado3))||((lado1 == lado3)&&(lado1 != lado2))||((lado2 == lado3)&&(lado2 != lado1))){
-            return true;
-        }else{
-            return false;
-        }
+    public boolean esIsoceles(){
+        return ((this.getLado1() == this.getLado2())&&(this.getLado1() != this.getLado3()))
+                ||((this.getLado1() == this.getLado3())&&(this.getLado1() != this.getLado2()))
+                ||((this.getLado2() == this.getLado3())&&(this.getLado2() != this.getLado1()));
     }
     
     @Override

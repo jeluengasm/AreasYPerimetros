@@ -6,12 +6,8 @@ public class Escaleno extends Triangulo{
         super(lado1, lado2, lado3);
     }
     
-    public static boolean esEscaleno(double lado1, double lado2, double lado3){
-        if((lado1 != lado2)&&(lado1 != lado3)&&(lado2 != lado3)){
-            return true;
-        }else{
-            return false;
-        }
+    public boolean esEscaleno(){
+        return (this.getLado1() != this.getLado2())&&(this.getLado1() != this.getLado3())&&(this.getLado2() != this.getLado3());
     }
 
     @Override

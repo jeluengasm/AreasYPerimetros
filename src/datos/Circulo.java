@@ -31,6 +31,6 @@ public class Circulo extends Forma implements Operador {
     
     @Override
     public String toString() {
-        return "\nRadio: " + this.getRadio() + "Figura: Circulo\nArea: " + this.calcularArea()+ "\nPerimetro: " + this.calcularPerimetro();
+        return "\nRadio: " + this.getRadio() + "\nFigura: Circulo\nArea: " + this.calcularArea()+ "\nPerimetro: " + this.calcularPerimetro();
     }
 }

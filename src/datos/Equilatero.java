@@ -1,4 +1,3 @@
-
 package datos;
 
 public class Equilatero extends Triangulo{
@@ -7,12 +6,8 @@ public class Equilatero extends Triangulo{
         super(lado1);
     }
     
-    public static boolean esEquilatero(double lado1, double lado2, double lado3){
-        if((lado1 == lado2)&&(lado1 == lado3)){
-            return true;
-        }else{
-            return false;
-        }
+    public boolean esEquilatero(){
+        return (this.getLado1() == this.getLado2())&&(this.getLado1() == this.getLado3());
     }
     
     @Override
